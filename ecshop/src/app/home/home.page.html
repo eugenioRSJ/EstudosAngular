@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <ion-label class="logo-black">baltagram</ion-label>
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-item>
+                <ion-avatar (click)="showOptions()">
+                    <img src="{{user.image}}">
+                </ion-avatar>
+            </ion-item>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button routerLink="/take-photo">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>
